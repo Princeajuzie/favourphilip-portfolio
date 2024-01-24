@@ -9,6 +9,11 @@ interface FeedbackCardProps {
   title: string;
 }
 
+declare module "@material-tailwind/react"{
+  interface RatingProps{
+    placeholder?: string;
+  }
+}
 export function FeedbackCard({ img, feedback, client, title }: FeedbackCardProps) {
   return (
     <Card shadow={false} className="items-start text-left">

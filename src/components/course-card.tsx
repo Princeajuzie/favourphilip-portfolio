@@ -10,6 +10,11 @@ interface CourseCardProps {
   label: string;
 }
 
+declare module "@material-tailwind/react"{
+  interface CardHeaderProps{
+    placeholder?: string;
+  }
+}
 export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
   return (
     <Card className="border">

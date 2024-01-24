@@ -53,6 +53,15 @@ function NavItem({ children, href }: NavItemProps) {
   );
 }
 
+
+declare module "@material-tailwind/react"{
+  interface IconButtonProps{
+    placeholder?: string;
+  }
+  interface NavbarProps{
+    placeholder?: string;
+  }
+}
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
 
