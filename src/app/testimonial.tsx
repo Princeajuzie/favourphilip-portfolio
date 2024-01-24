@@ -4,6 +4,12 @@ import Image from "next/image";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 
 
+declare module "@material-tailwind/react" {
+  interface AvatarProps {
+    placeholder?: string;
+  }
+
+}
 function TESTIMONIAL() {
   return (
     <section className="px-8 py-40">
