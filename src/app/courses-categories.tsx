@@ -66,6 +66,12 @@ declare module "@material-tailwind/react" {
   interface ButtonProps {
     placeholder?: string;
   }
+  interface CardProps{
+    placeholder?: string;
+  }
+  interface CardBodyProps{
+    placeholder?: string;
+  }
 }
 
 export function CoursesCategories() {
