@@ -1,9 +1,11 @@
+import { Typography } from '@material-tailwind/react'
 import React from 'react'
 
 export default function CourseVideo() {
   return (
     <div>
-          <div className="video-responsive flex items-center justify-center">
+          <div className="video-responsive flex flex-col items-center justify-center py-10 ">
+        
             <iframe
               width="853"
               height="480"
@@ -13,6 +15,10 @@ export default function CourseVideo() {
               allowFullScreen
               title="Embedded youtube"
             />
+              <Typography className=''>
+          Imagine living in Nigeria / Africa and you own a store on Amazon selling products to millions of people and getting paid in dollars ...Its not too late because the best time to start is NOW!!
+
+          </Typography>
           </div>
     </div>
   )

@@ -77,7 +77,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <div className="px-10 sticky top-4 z-50">
+    <div className="px-8 sticky top-4 z-50">
       <div className="mx-auto container">
         <MTNavbar
           blurred
