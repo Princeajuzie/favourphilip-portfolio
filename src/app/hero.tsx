@@ -9,12 +9,12 @@ function Hero() {
       <Image
         width={1200}
         height={1200}
-        src="/image/image8.svg"
+        src="/image/user8.svg"
         alt="bg-img"
         className="absolute inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center"
       />
       <div className="container mx-auto mt-28">
-        <div className="grid grid-cols-12 text-center lg:text-left">
+        <div className="grid grid-cols-12  text-center lg:text-left">
           <Card className="col-span-full rounded-xl border border-white bg-white/90 py-10 p-8 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-7">
             <Typography
               variant="h1"

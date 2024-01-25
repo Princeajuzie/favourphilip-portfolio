@@ -10,6 +10,7 @@ import Testimonial from "./testimonial";
 import Events from "./events";
 import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
+import CourseVideo from "./course-video";
 
 export default function Campaign() {
   return (
@@ -17,12 +18,13 @@ export default function Campaign() {
       <Navbar />
       <Hero />
       <OutImpressiveStats />
-      <CoursesCategories />
+       <CourseVideo />
       <ExploreCourses />
       <Testimonial />
+      <CoursesCategories />
       <Events />
       <StudentsFeedback />
-      <TrustedCompany />
+      {/* <TrustedCompany /> */}
       <Footer />
     </>
   );
