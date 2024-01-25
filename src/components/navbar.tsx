@@ -17,15 +17,15 @@ import {
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "facebook Page",
     icon: RectangleStackIcon,
   },
   {
-    name: "Account",
+    name: " instagram Account",
     icon: UserCircleIcon,
   },
   {
-    name: "Docs",
+    name: "telegram",
     icon: CommandLineIcon,
     href: "https://www.material-tailwind.com/docs/react/installation",
   },
@@ -86,7 +86,7 @@ export function Navbar() {
         >
           <div className="flex items-center justify-between">
             <Typography color="blue-gray" className="text-lg font-bold">
-              Material Tailwind
+              Favour Philip
             </Typography>
             <ul className="ml-10 hidden items-center gap-8 lg:flex">
               {NAV_MENU.map(({ name, icon: Icon, href }) => (
@@ -97,13 +97,8 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <Button variant="text">Log in</Button>
-              <a
-                href="https://www.material-tailwind.com/blocks"
-                target="_blank"
-              >
-                <Button color="gray">Blocks</Button>
-              </a>
+              <Button variant="text">Contact me</Button>
+          
             </div>
             <IconButton
               variant="text"
