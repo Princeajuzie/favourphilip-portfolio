@@ -15,7 +15,7 @@ function Hero() {
       />
       <div className=" md:w-fit h-fit  mx-auto   m-auto">
         <div className="grid grid-cols-12  text-center lg:text-left ">
-          <Card className="col-span-full rounded-xl border border-white bg-white/90 px-5 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-7 border-3 " >
+          <Card className="col-span-full rounded-xl border border-white bg-white/90 px-5 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-7 border-3  mt-[310px]" >
          
             <Typography variant="lead" className="mb-10 mt-6 !text-gray-900">
             How to make $5,000+ Per Month Selling Products on Amazon as a Nigerian.
