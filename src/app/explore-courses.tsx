@@ -7,9 +7,9 @@ const COURSES = [
   {
     img: "/image/books/book1.jpg",
     tag: "Beginner • 25 Classes • 200 Students",
-    title: "Unlock the Web Foundation",
+    title: "Fast Business Growth Without Limit",
     label: "from $99",
-    desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
+    desc: "If you are confused about how to start a business or you have started one already and you are struggling with sales ,not having customers and you are looking for answers then  You have come to the right place where you will get the answers you seek.",
   },
 
 ];
