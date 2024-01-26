@@ -18,13 +18,13 @@ declare module "@material-tailwind/react"{
 export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
   return (
     <Card className="border w-fit">
-      <CardHeader className="h-64 w-max">
+      <CardHeader className="h-64   ">
         <Image
-          width={800}
+          width={900}
           height={768}
           src={img}
           alt={title}
-          className="h-full w-auto object-cover scale-[1.1]"
+          className="h-full w-fit px-4 py-0 object-contain scale-[1.1]"
         />
       </CardHeader>
       <CardBody>

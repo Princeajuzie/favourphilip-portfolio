@@ -5,7 +5,7 @@ import React from 'react'
 export default function CourseVideo() {
   return (
     <div>
-          <div className="video-responsive flex flex-col items-center justify-center py-10 ">
+          <div className="video-responsive flex flex-col items-center justify-center px-10 ">
           <div className="mb-20 grid place-items-center text-center">
         <Typography variant="h2" color="blue-gray" className="my-3">
          Why You Need this Course 🤔
@@ -14,15 +14,14 @@ export default function CourseVideo() {
         Imagine living in Nigeria / Africa and you own a store on Amazon selling products to millions of people and getting paid in dollars ...Its not too late because the best time to start is NOW!!
         </Typography>
       </div>
-            <iframe
-              width="853"
-              height="480"
-              src={`https://www.youtube.com/embed/S0Iqy3X-N-Y`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              title="Embedded youtube"
-            />
+      <div className="aspect-w-16 aspect-h-9">
+      <video controls width="500" height="300">
+  <source src="/video/cou.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+    </div>
+
           </div>
     </div>
   )
