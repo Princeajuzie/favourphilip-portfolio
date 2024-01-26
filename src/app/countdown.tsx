@@ -9,7 +9,7 @@ export default function Countdown() {
 
   const [totalSeconds, setTotalSeconds] = useState<number>(() => {
     // Retrieve the totalSeconds from localStorage or use the initial value
-    const storedTotalSeconds = localStorage.getItem('countdownTotalSeconds');
+    const storedTotalSeconds = typeof window !== "undefined"?localStorage.getItem('countdownTotalSeconds') : null;
     return storedTotalSeconds ? parseInt(storedTotalSeconds, 10) : initialTotalSeconds;
   });
   const [hours, setHours] = useState<number>(Math.floor(totalSeconds / 3600));
@@ -27,7 +27,7 @@ export default function Countdown() {
 
   useEffect(() => {
     // Store the totalSeconds in localStorage
-    localStorage.setItem('countdownTotalSeconds', totalSeconds.toString());
+    typeof window !== "undefined"? localStorage.setItem('countdownTotalSeconds', totalSeconds.toString()) : null;
 
     const interval = setInterval(tick, 1000);
 
