@@ -15,17 +15,17 @@ import StatsCard from "@/components/stats-card";
 const STATS = [
   {
     icon: DocumentTextIcon,
-    count: "10,200+",
+    count: "17",
     title: "Students",
   },
   {
     icon: PlayCircleIcon,
-    count: "50+",
+    count: "1",
     title: "Instructors",
   },
   {
     icon: PencilSquareIcon,
-    count: "10+",
+    count: "1+",
     title: "Courses",
   },
   {

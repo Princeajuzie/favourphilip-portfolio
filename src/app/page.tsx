@@ -22,8 +22,8 @@ export default function Campaign() {
        <CourseVideo />
       <ExploreCourses />
      <Countdown />
-      <CoursesCategories />
-      <Events />
+      {/* <CoursesCategories /> */}
+      {/* <Events /> */}
       <StudentsFeedback />
       {/* <TrustedCompany /> */}
       <Footer />
