@@ -49,7 +49,7 @@ export default function Countdown() {
   }}
 >
   <div className="absolute top-0 right-0 bottom-0 left-0 bg-gray-900/70 opacity-90 rounded-lg " />
-  <div className="z-10 text-sm">WE ARE COMING SOON!</div>
+  <div className="z-10 text-sm">Available at this price for a LIMITED TIME</div>
   <div className="flex items-end justify-center z-10">
     <div className="m-2 sm:m-5">
 
