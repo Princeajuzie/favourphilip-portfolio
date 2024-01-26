@@ -11,6 +11,7 @@ import Events from "./events";
 import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
 import CourseVideo from "./course-video";
+import Countdown from "./countdown";
 
 export default function Campaign() {
   return (
@@ -20,7 +21,7 @@ export default function Campaign() {
       <OutImpressiveStats />
        <CourseVideo />
       <ExploreCourses />
-      <Testimonial />
+     <Countdown />
       <CoursesCategories />
       <Events />
       <StudentsFeedback />
