@@ -20,7 +20,7 @@ function Hero() {
          
             <Typography variant="lead" className="mb-10 mt-6 !text-gray-900">
             YOUR BUSINESS IS ABOUT TO CHANGE FOREVER!!
-             Click The Button Below to Join
+           
             </Typography>
             <div className="mb-8 flex justify-center gap-4 lg:justify-start flex-wrap">
             <Link

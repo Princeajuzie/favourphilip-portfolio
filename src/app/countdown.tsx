@@ -2,8 +2,42 @@
 import { Button } from '@material-tailwind/react'
 import React from 'react';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function Countdown() {
+    const initialTotalSeconds = 24 * 60 * 60; // 24 hours in seconds
+
+  const [totalSeconds, setTotalSeconds] = useState<number>(() => {
+    // Retrieve the totalSeconds from localStorage or use the initial value
+    const storedTotalSeconds = localStorage.getItem('countdownTotalSeconds');
+    return storedTotalSeconds ? parseInt(storedTotalSeconds, 10) : initialTotalSeconds;
+  });
+  const [hours, setHours] = useState<number>(Math.floor(totalSeconds / 3600));
+  const [minutes, setMinutes] = useState<number>(Math.floor((totalSeconds % 3600) / 60));
+  const [seconds, setSeconds] = useState<number>(totalSeconds % 60);
+
+  const tick = () => {
+    if (totalSeconds > 0) {
+      setTotalSeconds((prevTotalSeconds) => prevTotalSeconds - 1);
+      setHours(Math.floor(totalSeconds / 3600));
+      setMinutes(Math.floor((totalSeconds % 3600) / 60));
+      setSeconds(totalSeconds % 60);
+    }
+  };
+
+  useEffect(() => {
+    // Store the totalSeconds in localStorage
+    localStorage.setItem('countdownTotalSeconds', totalSeconds.toString());
+
+    const interval = setInterval(tick, 1000);
+
+    return () => clearInterval(interval);
+  }, [totalSeconds]);
+  
+
+  const HandleClear =()=>{
+    localStorage.removeItem('countdownTotalSeconds')
+  }
   return (
     <div className='flex item-center justify-center px-7 mt-8'>
         <div
@@ -19,17 +53,20 @@ export default function Countdown() {
   <div className="flex items-end justify-center z-10">
     <div className="m-2 sm:m-5">
 
+
+
     <div className="m-2 sm:m-5">
+        {/* <Button onClick={HandleClear} color='gray'> Clear</Button> */}
     </div>
-      <span className="text-[#212121] font-bold text-xl sm:text-5xl">13</span>
+      <span className="text-[#212121] font-bold text-xl sm:text-5xl">{hours.toString().padStart(2, '0')}</span>
       <p>Hours</p>
     </div>
     <div className="m-2 sm:m-5">
-      <span className="text-[#212121] font-bold text-xl sm:text-5xl">47</span>
+      <span className="text-[#212121] font-bold text-xl sm:text-5xl">{minutes.toString().padStart(2, '0')}</span>
       <p>Minutes</p>
     </div>
     <div className="m-2 sm:m-5">
-      <span className="text-[#212121] font-bold text-xl sm:text-5xl">20</span>
+      <span className="text-[#212121] font-bold text-xl sm:text-5xl">{seconds.toString().padStart(2, '0')}</span>
       <p>Seconds</p>
     </div>
   </div>

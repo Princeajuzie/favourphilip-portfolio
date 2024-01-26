@@ -36,7 +36,7 @@ const VideoPlayer = ({ mediaUrl }: { mediaUrl: string }) =>  {
           loop
           autoPlay
           playsInline
-          className="object-cover rounded-t-lg"
+          className="object-cover rounded-lg"
           controls={false}
      
         >
