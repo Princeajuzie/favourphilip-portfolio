@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div className="!flex h-[55vh] w-full items-center justify-between px-10  bg-red-700 mb-96">
+    <div className="!flex h-[55vh] w-full items-center justify-between px-10   lg:mb-96 md:mb-80">
       <Image
         width={1200}
         height={1200}
