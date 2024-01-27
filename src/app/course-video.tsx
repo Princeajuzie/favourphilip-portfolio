@@ -65,9 +65,9 @@ export default function CourseVideo() {
             Your business is about to change forever!!
           </Typography>
           <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
-            Imagine living in Nigeria / Africa and you own a store on Amazon
-            selling products to millions of people and getting paid in dollars
-            ...Its not too late because the best time to start is NOW!!
+          Get clarity on how to make massive income from your business.
+The course explains practical ways and strategies to grow any business in any field.
+Suitable for product and service based businesses online and offline.
           </Typography>
         </div>
         <div className="aspect-w-16 aspect-h-9">
