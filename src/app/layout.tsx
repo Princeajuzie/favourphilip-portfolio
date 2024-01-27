@@ -34,8 +34,8 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Layout>
           {children}
-          <Analytics />
         </Layout>
+          <Analytics />
       </body>
     </html>
   );
