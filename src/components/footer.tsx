@@ -2,17 +2,10 @@ import { Typography, Button, Input } from "@material-tailwind/react";
 
 const LINKS = [
   {
-    title: "Company",
-    items: ["About Us", "Careers", "Premium Tools", "Blog"],
+    title: "Socials",
+    items: ["Facebook", "Instagram", "Telegram",],
   },
-  {
-    title: "Pages",
-    items: ["Login", "Register", "Add List", "Contact"],
-  },
-  {
-    title: "Legal",
-    items: ["Terms", "Privacy", "Team", "About Us"],
-  },
+
 ];
 
 const CURRENT_YEAR = new Date().getFullYear();
