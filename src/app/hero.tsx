@@ -4,7 +4,16 @@ import Image from "next/image";
 import { Button, Typography, Card } from "@material-tailwind/react";
 import Link from "next/link";
 
+
 function Hero() {
+
+  function ScrollToCourse() {
+    typeof window !== "undefined"?window.scrollTo({
+      top: document?.getElementById("course")?.offsetTop,
+      behavior: "smooth",
+    }) : null
+  }
+
   return (
     <div className="!flex h-[55vh] w-full items-center justify-between px-10   lg:mb-96 md:mb-80">
       <Image
@@ -44,7 +53,7 @@ function Hero() {
       />
     </svg> </Button>
               </Link>
-              <Button color="gray" variant="outlined">
+              <Button color="gray" variant="outlined" onClick={ScrollToCourse}>
                 see pricing
               </Button>
             </div>
