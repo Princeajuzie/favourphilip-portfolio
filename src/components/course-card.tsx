@@ -55,13 +55,13 @@ export function CourseCard({ img, tag, title, desc, label, price }: CourseCardPr
 
           
         <p>normal price</p>
-        <Button variant="outlined" className="line-through">{label}</Button>
+        <Button variant="outlined" className="line-through cursor-default">{label}</Button>
         </Typography>
         <Typography className="flex items-center flex-col">
 
           
         <p>Slash Price</p>
-        <Button variant="outlined" className="">{price}</Button>
+        <Button variant="outlined" className=" cursor-default">{price}</Button>
         </Typography>
     </Typography>
       <h2 className="text-center mt-5">Hurry up! Limited-time offer 🎉.</h2>
