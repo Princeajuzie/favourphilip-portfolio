@@ -19,15 +19,17 @@ const NAV_MENU = [
   {
     name: "Facebook",
     icon: RectangleStackIcon,
+    href: "https://web.facebook.com/Team1000lives/?_rdc=1&_rdr",
   },
   {
     name: "Instagram",
     icon: UserCircleIcon,
+    href: "https://www.instagram.com/realfavourphilip/",
   },
   {
     name: "Telegram",
     icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    href: "https://t.me/+uB2rVR9mGeRiMDg0",
   },
 ];
 

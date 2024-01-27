@@ -4,10 +4,23 @@ import Link from "next/link";
 const LINKS = [
   {
     title: "Socials",
-    items: ["Facebook", "Instagram", "Telegram",],
+    items: [
+      {
+        title: "Facebook",
+        url: "https://web.facebook.com/Team1000lives/?_rdc=1&_rdr",
+      },
+      {
+        title: "Instagram",
+        url: "https://www.instagram.com/realfavourphilip/",
+      },
+      {
+        title: "Telegram",
+        url: "https://t.me/+uB2rVR9mGeRiMDg0",
+      },
+    ],
   },
-
 ];
+
 
 const CURRENT_YEAR = new Date().getFullYear();
 
@@ -19,20 +32,29 @@ export function Footer() {
           <div className="flex col-span-2 items-center gap-10 mb-10 lg:mb-0 md:gap-36">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
+              
+                {LINKS.map(({ title, items }) => (
+              <ul key={title}>
                 <Typography variant="h6" color="blue-gray" className="mb-4">
                   {title}
                 </Typography>
-                {items.map((link) => (
-                  <li key={link}>
-                    <Typography
-                      as="a"
-                      href="#"
-                      className="py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900"
-                    >
-                      {link}
-                    </Typography>
+                {items.map(({ title: linkTitle, url }) => (
+                  <li key={linkTitle}>
+                    <Link href={url} passHref>
+                      <Typography
+                        as="a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900"
+                      >
+                        {linkTitle}
+                      </Typography>
+                    </Link>
                   </li>
                 ))}
+              </ul>
+            ))}
+
               </ul>
             ))}
           </div>
