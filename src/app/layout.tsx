@@ -11,9 +11,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Course Landing Page",
+  title: "Favour Philip Course ",
   description:
-    "Introducing Tailwind Course Landing Page, a versatile and engaging landing page template designed using Tailwind CSS and Material Tailwind.",
+    "you are confused about how to start a business or you have started one already but you are struggling with sales,not having customers and you need to start making huge profits from that business. This course has been designed and written to help you scale up that business and grow financially.",
 };
 
 export default function RootLayout({
