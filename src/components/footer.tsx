@@ -1,4 +1,5 @@
 import { Typography, Button, Input } from "@material-tailwind/react";
+import Link from "next/link";
 
 const LINKS = [
   {
@@ -70,14 +71,11 @@ export function Footer() {
           color="blue-gray"
           className="md:text-center mt-16 font-normal !text-gray-700"
         >
-          &copy; {CURRENT_YEAR} Made with{" "}
-          <a href="https://www.material-tailwind.com" target="_blank">
-            Material Tailwind
-          </a>{" "}
-          by{" "}
-          <a href="https://www.creative-tim.com" target="_blank">
-            Creative Tim
-          </a>
+          &copy; {CURRENT_YEAR} Made with 💖 by {" "}
+          <Link href="https://bio.link/princeaj" target="_blank">
+            @princeajuzie
+          </Link>{" "}
+      
           .
         </Typography>
       </div>

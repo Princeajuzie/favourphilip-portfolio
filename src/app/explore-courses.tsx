@@ -7,8 +7,9 @@ const COURSES = [
   {
     img: "/image/books/book1.jpg",
     tag: "Beginner • 25 Classes • 200 Students",
+    price: " ₦5k",
+    label: " ₦15k",
     title: "Fast Business Growth Without Limit",
-    label: "from $99",
     desc: "If you are confused about how to start a business or you have started one already and you are struggling with sales ,not having customers and you are looking for answers then  You have come to the right place where you will get the answers you seek.",
   },
 

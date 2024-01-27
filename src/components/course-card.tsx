@@ -8,6 +8,7 @@ interface CourseCardProps {
   title: string;
   desc: string;
   label: string;
+  price: string;
 }
 
 declare module "@material-tailwind/react"{
@@ -15,7 +16,7 @@ declare module "@material-tailwind/react"{
     placeholder?: string;
   }
 }
-export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
+export function CourseCard({ img, tag, title, desc, label, price }: CourseCardProps) {
   return (
     <Card className="border w-fit">
       <CardHeader className="h-64   ">
@@ -48,7 +49,22 @@ export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
         <Typography className="mb-6 font-normal !text-gray-500">
           {desc}
         </Typography>
-        <Button variant="outlined">{label}</Button>
+    <Typography className="flex items-center gap-2 justify-between">
+
+        <Typography className="flex items-center flex-col ">
+
+          
+        <p>normal price</p>
+        <Button variant="outlined" className="line-through">{label}</Button>
+        </Typography>
+        <Typography className="flex items-center flex-col">
+
+          
+        <p>Slash Price</p>
+        <Button variant="outlined" className="">{price}</Button>
+        </Typography>
+    </Typography>
+      <h2 className="text-center mt-5">Hurry up! Limited-time offer 🎉.</h2>
       </CardBody>
     </Card>
   );
