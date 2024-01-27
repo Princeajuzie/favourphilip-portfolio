@@ -13,21 +13,7 @@ import StatsCard from "@/components/stats-card";
 
 
 const STATS = [
-  {
-    icon: DocumentTextIcon,
-    count: "17",
-    title: "Students",
-  },
-  {
-    icon: PlayCircleIcon,
-    count: "1",
-    title: "Instructors",
-  },
-  {
-    icon: PencilSquareIcon,
-    count: "1+",
-    title: "Courses",
-  },
+
   {
     icon: PhoneArrowDownLeftIcon,
     count: "24/7",
@@ -47,8 +33,8 @@ export function OutImpressiveStats() {
             variant="lead"
             className="mx-auto mb-24 w-full !text-gray-500 lg:w-5/12"
           >
-            We take pride in our commitment to excellence and our dedication to
-            your success.
+            Find out the basics in business before starting up one and know the common mistakes you are making in your business that is slowing down your sales.
+
           </Typography>
         </div>
         <div className="grid gap-y-16 gap-x-10 md:grid-cols-2 lg:grid-cols-4">

@@ -24,7 +24,7 @@ export default function Campaign() {
      <Countdown />
       {/* <CoursesCategories /> */}
       {/* <Events /> */}
-      <StudentsFeedback />
+      {/* <StudentsFeedback /> */}
       {/* <TrustedCompany /> */}
       <Footer />
     </>
