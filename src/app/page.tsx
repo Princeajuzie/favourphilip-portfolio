@@ -1,4 +1,5 @@
 // components
+"use client"
 import { Navbar, Footer } from "@/components";
 
 // sections
@@ -13,10 +14,33 @@ import TrustedCompany from "./trusted-companies";
 import CourseVideo from "./course-video";
 import Countdown from "./countdown";
 import Finally from "./finally";
+import Hostingpage from "./hostingpage";
+import { useEffect, useState } from "react";
 
 export default function Campaign() {
+  const [hidden, setHidden ] = useState(false)
+
+  useEffect(()=>{
+     
+    setTimeout(()=>{
+      setHidden(true)
+    },1000)
+
+  },[])
+
+
   return (
     <>
+    {  hidden?
+    <div className="flex items-center justify-center h-[100vh]">
+
+
+      <Hostingpage />
+    </div>
+
+    :
+      <>
+      
       <Navbar />
       <Hero />
       <OutImpressiveStats />
@@ -28,7 +52,10 @@ export default function Campaign() {
       {/* <StudentsFeedback /> */}
       {/* <TrustedCompany /> */}
       <Finally />
+    
       <Footer />
+      </>
+    }
     </>
   );
 }
