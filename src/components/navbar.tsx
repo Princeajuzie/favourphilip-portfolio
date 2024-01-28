@@ -31,6 +31,11 @@ const NAV_MENU = [
     icon: CommandLineIcon,
     href: "https://t.me/+uB2rVR9mGeRiMDg0",
   },
+  {
+    name: "Telegram",
+    icon: CommandLineIcon,
+    href: "https://t.me/+uB2rVR9mGeRiMDg0",
+  },
 ];
 
 interface NavItemProps {

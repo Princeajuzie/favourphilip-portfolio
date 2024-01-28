@@ -12,6 +12,7 @@ import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
 import CourseVideo from "./course-video";
 import Countdown from "./countdown";
+import Finally from "./finally";
 
 export default function Campaign() {
   return (
@@ -26,6 +27,7 @@ export default function Campaign() {
       {/* <Events /> */}
       {/* <StudentsFeedback /> */}
       {/* <TrustedCompany /> */}
+      <Finally />
       <Footer />
     </>
   );

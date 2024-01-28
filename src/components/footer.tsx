@@ -1,3 +1,4 @@
+"use client"
 import { Typography, Button, Input } from "@material-tailwind/react";
 import Link from "next/link";
 
@@ -12,6 +13,10 @@ const LINKS = [
       {
         title: "Instagram",
         url: "https://www.instagram.com/realfavourphilip/",
+      },
+      {
+        title: "Tiktok",
+        url: "https://www.tiktok.com/@realfavourphilip",
       },
       {
         title: "Telegram",
@@ -94,7 +99,7 @@ export function Footer() {
           className="md:text-center mt-16 font-normal !text-gray-700"
         >
           &copy; {CURRENT_YEAR} Made with 💖 by {" "}
-          <Link href="https://bio.link/princeaj" target="_blank">
+          <Link href="https://bio.link/princeaj" target="_blank" className="text-red-600 underline">
             @princeajuzie
           </Link>{" "}
       
